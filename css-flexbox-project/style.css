@@ -1,0 +1,140 @@
+body {
+  background-color: #aaa;
+}
+
+.form-row {
+  padding: 10px 0;
+  background-color: #fff;
+  max-width: 1300px;
+  /* color: #fff; */
+  display: flex;
+  margin: 0 auto;
+  /* padding: 0 20px; */
+  padding: 20px 50px;
+}
+
+.form-row label {
+  padding-right: 10px;
+}
+
+.form-row input {
+  flex: 1;
+  /* extend input box to fit window width */
+}
+
+.column-layout {
+  max-width: 1300px;
+  background-color: #fff;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 50px;
+  /* border: 1px solid blue; */
+  /* display: flex; */
+  
+}
+
+.main-column {
+  flex: 3;
+  order: 2;
+}
+
+.sidebar-one {
+  flex: 1;
+  /* works as base line */
+  order: 1;
+}
+
+.sidebar-two {
+  flex: 1;
+  order: 3;
+}
+
+.call-outs-container {
+  max-width: 1400px;
+  margin: 40px auto 0 auto;
+  
+}
+
+.call-out {
+  padding: 20px;
+  box-sizing: border-box;
+  /* fix box width */
+  margin-bottom: 20px;
+  flex-basis: 30%;
+  /* way flexbox set element width */
+}
+
+.call-out:nth-child(1) { background-color: #c0dbe2; }
+.call-out:nth-child(2) { background-color: #cdf1c3; }
+.call-out:nth-child(3) { background-color: #ccb9da; }
+
+.banner {
+  height: 400px;
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  /* Up Left Down Right */
+  background-color: #2a2a2a;
+  display: flex;
+}
+
+.center-me {
+  color: #fff;
+  font-size: 50px;
+  margin: auto;
+  /* center text both vertically and horizontally */
+}
+
+.equal-height-container {
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  /* center horizontally */
+  /* display: flex; */
+}
+
+.first {
+  background-color: #fff;
+  padding: 20px;
+  /* flex: 1; */
+}
+
+.second {
+  background-color: yellow;
+  /* flex: 1; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* default flex-direction is row */
+}
+
+.second-a {
+  background-color: #c0dbe2;
+  padding: 20px;
+  box-sizing: border-box;
+  /* flex: 1; */
+}
+
+
+.second-b {
+  background-color: #cdf1c3;
+  padding: 20px;
+  box-sizing: border-box;
+  /* flex: 1; */
+  /* margin: auto; */
+}
+
+
+@media (min-width: 900px) {
+  .call-outs-container {
+    display: flex;
+    /* align-items: stretch; */
+    /* strech is the default value of align-items */
+    justify-content: space-between;
+  }
+
+  .column-layout {
+    display: flex;
+  }
+
+  .equal-height-container {
+    display: flex;
+  }
+}
